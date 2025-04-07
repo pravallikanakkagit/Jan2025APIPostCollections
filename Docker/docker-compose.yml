@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  gorest:
+    image: pravallikanakka/goresttest:1.0
+    volumes:
+      - ./results:/app/results
+
+  booking:
+    image: pravallikanakka/mybookingapi:1.0
+    volumes:
+      - ./results:/app/results
